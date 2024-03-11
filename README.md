@@ -442,7 +442,7 @@ TIME COMPLEXITY:
 The time complexity of the merge sort algorithm is O(n log n), where 'n' is the size of the array.
 
 
-## 9. GENERATE MAGIC SQAURE 
+## 9. GENERATE MAGIC SQUARE
 
 ALGORITHM :
 
