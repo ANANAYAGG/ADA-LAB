@@ -870,3 +870,50 @@ The time complexity of Kruskal's algorithm is dominated by the sorting step, whi
 The Union-Find operations (finding and merging) take nearly constant time on average.
 Overall, the time complexity of the entire algorithm is O(E log E).
 
+
+## MULTISTAGE GRAPH(fcost)
+The program calculates the cost of the shortest path from each node to the end node using dynamic programming. It iterates backward starting from the last node (end node) and calculates the cost of the shortest path from each node to the end node.
+
+TIME COMPLEXITY = O(V^2)
+
+## ASSEMBLY LINE
+This algorithm computes the minimum time required to complete the assembly process and determines the optimal path (line) for each station. It utilizes dynamic programming to compute the minimum time recursively.
+
+TIME COMLEXITY = O(n)
+
+## LONGEST COMMON SUBSEQUENCE
+The program implements the Longest Common Subsequence (LCS) problem using dynamic programming. It calculates the length of the LCS between two given strings and prints the LCS along with arrows indicating the matching characters.
+
+TIME COMPLEXITY = O(m*n). m and n are the lengths of the input strings.
+
+## MATRIX CHAIN MULTIPLICATION
+The program utilizes dynamic programming to solve the Matrix Chain Multiplication problem, aiming to minimize the number of scalar multiplications needed to multiply a sequence of matrices. It iteratively computes the optimal number of multiplications for various subproblems, storing the results to avoid redundant computations.
+
+TIME COMLEXITY = O(n^3)
+
+## 0/1 Knapsack(DYNAMIC PROGRAMMING)
+The algorithm solves the 0/1 knapsack problem using dynamic programming. It initializes a 2D array to store maximum values achievable for different weights and items. It iterates through each item and weight combination, updating the array based on whether including the item would improve the value. After filling the array, it traces back to determine the selected items.
+
+TIME COMPLEXITY = O(n*W). is the number of items and W is the maximum capacity of the knapsack.
+
+## 0/1 KNAPSACK(USING MERGE PURGE)
+The provided algorithm employs dynamic programming to solve the 0/1 knapsack problem efficiently. It iterates through each item, constructing sets of pairs representing all possible combinations of accumulated values and weights up to the current item. These sets are merged and pruned to eliminate dominated solutions, ensuring only non-dominated solutions are considered. The algorithm then finds the maximum value among the remaining solutions and identifies the corresponding items contributing to it. TIME COMPLEXITY = O(2^n)
+
+## N QUEENS PROBLEM
+The code employs a backtracking algorithm to solve the N-Queens problem efficiently. At its core, it iteratively places queens on a chessboard, ensuring no two queens threaten each other. The place function checks for conflicts with existing queens, validating potential queen placements. Through recursive backtracking in the Nqueens function, the algorithm systematically explores all possible configurations, marking valid solutions when all queens are placed successfully.
+
+TIME COMPLEXITY = O(n!)
+
+## SUM OF SUBSETS
+The provided algorithm tackles the sum-of-subsets problem using a backtracking approach. It recursively explores different combinations of elements in the array to identify subsets that sum up to a target value. At each step, the algorithm considers whether including the current element in the subset would lead to a valid solution, and if so, it adds the element to the subset and continues exploring further. If adding the element would exceed the target sum, the algorithm backtracks, excluding the element and exploring other possibilities. This process continues until all possible combinations are explored or until a valid subset summing up to the target value is found. By systematically pruning the search space using backtracking, the algorithm efficiently identifies all subsets that meet the sum condition, providing an optimized solution for the sum-of-subsets problem.
+
+TIME COMPLEXITY = O(2^n)
+
+## M-COLORING PROBLEM
+The provided algorithm aims to solve the m-coloring problem using backtracking. It attempts to color the vertices of a given graph using at most m colors, ensuring that no adjacent vertices share the same color. The main function initializes the graph's adjacency matrix, sets the number of vertices and colors, and calls the mcoloring function with initial parameters. The mcoloring function recursively explores different color assignments for each vertex, backtracking when necessary. If a valid coloring is found, it prints the coloring and returns. If the graph cannot be colored with the given number of colors, it outputs a message indicating so. The nextvalue function determines the next color to try for a vertex, ensuring that it doesn't violate the m-coloring constraint. Through systematic exploration and backtracking, the algorithm efficiently identifies whether the graph can be colored with at most m colors and, if so, provides one of the possible colorings. TIME COMPLEXITY = O(n*m^n)
+
+## MATRIX MULTIPLICATION(DIVIDE AND CONQUER)
+The code employs Strassen's algorithm for matrix multiplication, a divide-and-conquer approach. It recursively partitions the input matrices A and B into smaller submatrices until reaching base cases. It then performs multiplications and additions according to Strassen's algorithm. The resulting matrix C is printed. This method optimizes multiplication for large matrices by reducing the number of scalar multiplications.
+
+TIME COMPLEXITY = O(n^3)
+
